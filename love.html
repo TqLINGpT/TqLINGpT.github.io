@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <style>
+      *{
+        margin: 100;
+      }
+    body {
+        font-family: Arial, sans-serif; color: magenta;
+        background-color: #ffeaea;
+        text-align: center;
+    }
+    button {
+        border-color: deeppink;
+        width: 200px;
+        font-size: 30px;
+        color: deeppink;
+        background-color: mistyrose
+    }
+    #button1 {
+      transform: translate(-50%,0);
+    }
+    #button2 {
+      transform: translate(-50%,0);
+      position: absolute;
+    }
+    </style>
+<head>
+    <body>
+        <div class="center">
+        <h1 style="color: deeppink;">¿Quieres Ser Mi Novia VAL?</h1>
+            <button id="button1">Si</button>
+            <button id="button2" onclick="cambiarPosicion()">No</button>
+            <h1 style="color: rgb(255, 0, 0);">❤</h1>
+            <img src="img/amor.gif" height="300">
+        </div>
+        <script>
+            const button1 = document.querySelector('#button1');
+            button1.addEventListener('click', function(){
+              alert('❤❤FELICIDADES TE GANASTE AL MEJOR NOVIO❤❤')
+              alert('❤SUNDAY/24/DIC/2023❤')
+          });
+            
+            function cambiarPosicion() {
+              var button2 = document.getElementById('button2');
+              var nuevaPosicion = {
+                top: Math.floor(Math.random() * window.innerHeight) + 'px',
+                left: Math.floor(Math.random() * window.innerWidth) + 'px',
+                mid: Math.floor(Math.random() * window.innerWidth) + 'px'
+              };
+              button2.style.top = nuevaPosicion.top;
+              button2.style.left = nuevaPosicion.left;
+              button2.style.mid = nuevaPosicion.mid;
+            }
+          </script>
+    </body>
+</head>
+</html>
