@@ -1,2 +1,2 @@
-# val-love.io
+# val-love
 aaa
